@@ -53,39 +53,6 @@
 % Set default figure placement to htbp
 \def\fps@figure{htbp}
 \makeatother
-% definitions for citeproc citations
-\NewDocumentCommand\citeproctext{}{}
-\NewDocumentCommand\citeproc{mm}{%
-  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
-\makeatletter
- % allow citations to break across lines
- \let\@cite@ofmt\@firstofone
- % avoid brackets around text for \cite:
- \def\@biblabel#1{}
- \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
-\makeatother
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
- {\begin{list}{}{%
-  \setlength{\itemindent}{0pt}
-  \setlength{\leftmargin}{0pt}
-  \setlength{\parsep}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-   \setlength{\leftmargin}{\cslhangindent}
-   \setlength{\itemindent}{-1\cslhangindent}
-  \fi
-  % set entry spacing
-  \setlength{\itemsep}{#2\baselineskip}}}
- {\end{list}}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -179,46 +146,24 @@ Storyline:
 
 \subsection{Introduction}\label{introduction}
 
-Significance of PMs in the climate system
+Mongolian dust is well-known by its term of coarse, * color of brown, *
+its influence on downwind regions, * and big role in global dust, * and
+its seasonality.
+
+Because, it mainly consists of coarse fractions researchers neglect its
+role in global climate into elaborating global dust-aerosol effects.
+\emph{However, recent change in the driving of the emissions of
+particulate matters might cause fluctuations} its spatio-temporal
+variations and * characteristics and * emerge a new pattern, eventually
+it may lead to the role in the regional and global dust, so on climate
+system through * altering solar incidence, cloud formation, and
+precipitation or warming * the climate with the fraction of finer
+particulates.
+
+Mongolia might turn into the not only coarse-dust source region but also
+fine-mixed coarse-dust region.
 
 \begin{itemize}
-\tightlist
-\item
-  PM consists of dust and aerosol, and emissions.
-\item
-  particulate matters has a significant effects on the climate system,
-  altering the solar incidence, cloud formation, and precipitation.
-\item
-  concentrations of particulate matter is ephederemal, yet vary
-  depending on whether the pollution cause is natural or industrial,
-  local or transported, seasonal or non-seasonal, makes complex and
-  challenging.
-\end{itemize}
-
-Moreover, emerging shifts in the PM emissions and their patterns alters
-continuously due to their dependencies on various drivings.
-
-\begin{itemize}
-\tightlist
-\item
-  It is well-informed that concentrations of air particulate matter
-  solely depend on urbanization and economic situations to the area of
-  the interest of the country. Globally, 7.3 billion people are directly
-  exposed to unsafe average annual PM2.5 concentrations, and 80\% of
-  them living in low- and middle-income countries, where economies often
-  rely heavily on polluting industries. A similar pattern of the
-  significant disparities in air quality among income and racial/ethnic
-  groups, as well as between urban and rural areas was reported in USA
-  (Liu et al., 2021). Despite this disparity, meteorological effects
-  such as dust storm, stagnant weather plays important role in the
-  spatiotemporal variability of PM10 and PM2.5.
-\end{itemize}
-
-Similarly, Mongolia might turn into the not only coarse-dust source
-region but also fine-mixed coarse-dust region.
-
-\begin{itemize}
-\tightlist
 \item
   Use of coal is increased
 \item
@@ -242,7 +187,145 @@ region but also fine-mixed coarse-dust region.
   A such changes in PM10 and PM2.5 to stagnant weather conditions, and
   local or transported dust was also observed in other countries China
   (Wang), Korea (Kim) and Japan ().
+\item
+  deposition
+\item
+  concentrations of particulate matter is ephederemal, yet vary
+  depending on whether the pollution cause is natural or industrial,
+  local or transported, seasonal or non-seasonal, makes complex and
+  challenging.
 \end{itemize}
+
+Therefore, we aimed to demonstrate the distinct temporal and spatial
+variations of PM2.5 and PM10 across urban and rural Mongolia using
+extensive data from 2008 to 2020.
+
+\begin{itemize}
+\tightlist
+\item
+  The present study will contribute significantly to the understanding
+  of air particulate matter patterns in Mongolia and providing
+  comprehensive data insights for policymakers and public health
+  sectors.
+\item
+  Our findings is useful not only for addressing national health impacts
+  but also beneficial for understanding air particulate matter as
+  ambient air pollution, and tackling atmospheric aerosol effects in the
+  climate system, and revealing their transboundary effects to the
+  downwind regions in South-east Asia.
+\end{itemize}
+
+\newpage
+
+\subsection{Results and Discussion}\label{results-and-discussion}
+
+\newpage
+\subsection{Urban and rural distinct Spatio-temporal diverse variations of $PM_{10}$ and $PM_{2.5}$}
+
+\begin{figure}
+\centering
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_3.png}
+\caption{Distinct concentrations of coarse and fine particulates among
+sites}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Compare the concentrations of PMs at UB is the 2. Significance level
+  difference 3. Conclude
+\end{enumerate}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=3.4375in,height=\textheight,keepaspectratio]{images/figure_4.png}
+\caption{Annual variations of \$PM\_\{10\}\$ and \$PM\_\{2.5\}\$}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Clear annual variations at UB and DZ from pm2.5 pollutions 2. at ZU,
+  and SS has a seasonally peaks episodic spring and late autumn from
+  PM10
+\end{enumerate}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_5.png}
+\caption{Daily variations of \(PM_{10}\) and \(PM_{2.5}\) at UB and DZ
+sites}
+\end{figure}
+
+\newpage
+\subsection{Meteorological influence on $PM_{10}$ and $PM_{2.5}$ variations}
+\label{subsec2}
+
+\begin{figure}
+\centering
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_6.png}
+\caption{Relationships between meteorological major factors and
+variations of \(PM_{10}\) and \(PM_{2.5}\)}
+\end{figure}
+
+\newpage
+
+\begin{figure}
+\centering
+\includegraphics[width=2.08333in,height=\textheight,keepaspectratio]{images/figure_7.png}
+\caption{Spatio-temporal distinct feature of variations of \(PM_{10}\)
+and \(PM_{2.5}\) with PCA analysis}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=2.08333in,height=\textheight,keepaspectratio]{images/figure_7b.png}
+\caption{Patterns of meteorology and PMs at the 4 sites}
+\end{figure}
+
+\newpage
+\subsection{Trends}
+
+\begin{figure}
+\centering
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_8.png}
+\caption{Interannual and seasonal trends of \(PM_{10}\) and \(PM_{2.5}\)
+variations}
+\end{figure}
+
+\newpage
+
+\subsection{Conclusions}\label{conclusions}
+
+In this study, we investigated the temporal variations of PM2.5 and PM10
+concentrations at the 4 sites of rural and urban those located along the
+the wind corridor. Three distinct variations has been detected.
+
+\begin{enumerate}
+    \item Air quality in urban sites is episodically dictated by dust events in spring or late autumn, yet seasonally governed by anthropogenic emissions in winter.
+    \item Air quality in rural sites of SS and ZU is episodically dictated by dust events in spring or late autumn.
+    \item Air quality in rural sites of SS and ZU is episodically dictated by dust events in spring or late autumn.
+\end{enumerate}
+
+A clear seasonal variations in the sites of UB and DZ is {[}Air quality
+is governed by natural dust emission, and anthropogenic emissions{]} *
+Due to rapid increase in urban, and combustion of coal/oyutolgoi for
+heating winter conditions results a highly increase in not only capital
+city but also towns * In a result, spring coarse dust, plus winter fine
+pollutants {[}spring coarse dust is immediately transported and
+deposited in the source area, whereas winter fine pollutants is
+permanently stayed in the source area due to stagnant atmosphere govern
+over entire country., perhaps float- ing in the near surface, deposits
+in the surface{]} * Alarms, the Mongolian dust in the spring, optical
+properties will be shifted; this gives \ldots{} Gobi dust and sand
+storms has become tuiren, from the shoroon shuurga. which clearly
+requires the attention.
 
 Following problems
 
@@ -275,52 +358,28 @@ Following problems
   Long-term exposure to low levels of particulate matter, such as
   concentrations as low as 10 \(\mu g m^{-3}\) (equilibrium to WHO Air
   Quality Guidelines), has been linked to increased lung cancer in the
-  EU (Hvidtfeldt et al.~2021), with similar evidences reported in Canada
+  EU (Hvidtfeldt et al. 2021), with similar evidences reported in Canada
   (Bai et al., 2019), and significantly higher rates captured in China
   with concentrations up to 30 \(\mu g m^{-3}\). Apparently, pollutants
   of particulate matters has effects to various health issues with the
   different thresholds and exposure durations. However, more in-depth
   and diversified research on air pollution and its health effects is
-  essential, with the detailed information is necessary (Tan et al 2021)
-  to have accuracy of assessing exposure to air pollution during
-  developmentally relevant time periods, such as trimesters or months
-  (Becerra et al., 2013; Gong et al., 2014; Kalkbrenner et al., 2014) or
-  weeks (Chiu et al., 2016). Many research findings/Numerous research
-  findings have advanced the field, and air quality indices is widely
-  used for providing guidance, and public perception of air quality has
-  been improved (Mirabelli et al., 2020).
+  essential, with the detailed information is necessary (Tan et al
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi})}
+  \setcounter{enumi}{2020}
+  \tightlist
+  \item
+    to have accuracy of assessing exposure to air pollution during
+    developmentally relevant time periods, such as trimesters or months
+    (Becerra et al., 2013; Gong et al., 2014; Kalkbrenner et al., 2014)
+    or weeks (Chiu et al., 2016). Many research findings/Numerous
+    research findings have advanced the field, and air quality indices
+    is widely used for providing guidance, and public perception of air
+    quality has been improved (Mirabelli et al., 2020).
+  \end{enumerate}
 \end{itemize}
-
-Therefore, we aimed to demonstrate the distinct temporal and spatial
-variations of PM2.5 and PM10 across urban and rural Mongolia using
-extensive data from 2008 to 2020.
-
-\begin{itemize}
-\tightlist
-\item
-  The present study will contribute significantly to the understanding
-  of air particulate matter patterns in Mongolia and providing
-  comprehensive data insights for policymakers and public health
-  sectors.
-\item
-  Our findings is useful not only for addressing national health impacts
-  but also beneficial for understanding air particulate matter as
-  ambient air pollution, and tackling atmospheric aerosol effects in the
-  climate system, and revealing their transboundary effects to the
-  downwind regions in South-east Asia.
-\end{itemize}
-
-\newpage
-
-\subsection{Results and Discussion}\label{results-and-discussion}
-
-\textsuperscript{1} dksl ss\textsuperscript{2} \textbf{Figure 3.
-Geographic locations of study sites} is shown in the wind speed map and
-elevation maps.
-
-\newpage
-
-\subsection{Conclusions}\label{conclusions}
 
 \newpage
 
@@ -381,36 +440,41 @@ precipitation is 163 mm, and mean temperature is 0.1◦C for the period
 al., 2010a). Insert figure legends with the first sentence in bold, for
 example:
 
-\textbf{Figure 1. Geographic locations of study sites} is shown in the
-wind speed map and elevation maps.
+\newpage
 
-\textbf{Table 1. A description of datasets obtained at the sites}
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_1.png}{]}
 
-\textbf{Figure 2.} is shown in the wind speed map and elevation maps.
+\begin{figure}
+\centering
+\includegraphics[width=4.16667in,height=\textheight,keepaspectratio]{images/table_1.png}
+\caption{\textbf{Table 1}. A description of datasets obtained at the
+sites}
+\end{figure}
 
-\cite{Schloss2009} \newpage
+\newpage
 
-\subsection*{References}\label{references}
-\addcontentsline{toc}{subsection}{References}
+\begin{figure}
+\centering
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/scheme_1.png}
+\caption{Scheme 1. Data handling procedure}
+\end{figure}
 
-\phantomsection\label{refs}
-\begin{CSLReferences}{0}{0}
-\bibitem[\citeproctext]{ref-Schloss2009}
-\CSLLeftMargin{1. }%
-\CSLRightInline{Schloss, P. D. \emph{et al.}
-\href{https://doi.org/10.1128/aem.01541-09}{Introducing mothur:
-Open-source, platform-independent, community-supported software for
-describing and comparing microbial communities}. \emph{Applied and
-Environmental Microbiology} \textbf{75}, 7537--7541 (2009).}
+\newpage
 
-\bibitem[\citeproctext]{ref-Munkh2017}
-\CSLLeftMargin{2. }%
-\CSLRightInline{Munkhtsetseg, E. \emph{et al.}
-\href{https://doi.org/10.5194/acp-17-11389-2017}{Anthropogenic dust
-emissions due to livestock trampling in a mongolian temperate
-grassland}. \emph{Atmospheric Chemistry and Physics} \textbf{17},
-11389--11401 (2017).}
+\begin{figure}
+\centering
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_2b.png}
+\caption{Figure 2. Data gap filling}
+\end{figure}
 
-\end{CSLReferences}
+\begin{figure}
+\centering
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_2c.png}
+\caption{Figure 2b. Data gap filling}
+\end{figure}
+
+\newpage
+
+\subsection{References}\label{references}
 
 \end{document}
