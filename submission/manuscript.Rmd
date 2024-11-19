@@ -93,65 +93,175 @@ Storyline:
 
 ## Introduction
 
-Mongolian dust is well-known by its term of coarse, \* color of brown,
-\* its influence on downwind regions, \* and big role in global dust, \*
-and its seasonality.
 
-Because, it mainly consists of coarse fractions researchers neglect its
-role in global climate into elaborating global dust-aerosol effects.
-*However, recent change in the driving of the emissions of particulate
-matters might cause fluctuations* its spatio-temporal variations and \*
-characteristics and \* emerge a new pattern, eventually it may lead to
-the role in the regional and global dust, so on climate system through
-\* altering solar incidence, cloud formation, and precipitation or
-warming \* the climate with the fraction of finer particulates.
 
-Mongolia might turn into the not only coarse-dust source region but also
-fine-mixed coarse-dust region.
 
--   Use of coal is increased
 
--   Urbanization
 
--   The monthly mean concentrations of PM10 (PM2.5) reached annual
-    maximum in December and January due to winter synoptic governing
-    conditions in Ulaanbaatar, capital city of Mongolia (Jugder).
 
--   Despite this, the spring dust storms creates another polluted season
-    in UB. On spring, the dust storm from the Gobi Desert contribute
-    significantly to increased aerosols in the atmosphere and ambient
-    air pollution, leading to sporadic peaks in PM10 concentrations
-    reaching as high as 64-234 $\mu g m^{-3}$ per day or exceeding 6000
-    $\mu g m^{-3}$ per hour (Jugder).
-
--   Siberian anticyclonic activity governed over Mongolia, which create
-    a significant vulnerability to winter air pollution in the populated
-    areas.
-
--   A such changes in PM10 and PM2.5 to stagnant weather conditions, and
-    local or transported dust was also observed in other countries China
-    (Wang), Korea (Kim) and Japan ().
-
--   deposition
-
--   concentrations of particulate matter is ephederemal, yet vary
-    depending on whether the pollution cause is natural or industrial,
-    local or transported, seasonal or non-seasonal, makes complex and
-    challenging.
-
+## Research Qs
 Therefore, we aimed to demonstrate the distinct temporal and spatial
 variations of PM2.5 and PM10 across urban and rural Mongolia using
 extensive data from 2008 to 2020.
 
--   The present study will contribute significantly to the understanding
-    of air particulate matter patterns in Mongolia and providing
-    comprehensive data insights for policymakers and public health
-    sectors.
--   Our findings is useful not only for addressing national health
-    impacts but also beneficial for understanding air particulate matter
-    as ambient air pollution, and tackling atmospheric aerosol effects
-    in the climate system, and revealing their transboundary effects to
-    the downwind regions in South-east Asia.
+On spring, the dust storm from the Gobi Desert contribute
+significantly to increased aerosols in the atmosphere and ambient
+air pollution, leading to sporadic peaks in PM10 concentrations
+reaching as high as 64-234 $\mu g m^{-3}$ per day or exceeding 6000
+$\mu g m^{-3}$ per hour (Jugder).
+concentrations of particulate matter is ephederemal, yet vary
+    depending on whether the pollution cause is natural or industrial,
+    local or transported, seasonal or non-seasonal, makes complex and
+    challenging.
+    1.  Do concentrations of particulate matters differ in between urban
+        and rural sites, and even within Gobi sites?
+    2.  Do distinct temporal variations has existed among the sites?
+    3.  Do PM2.5 particulates has contributed to the PM10 annual
+        variations?
+
+    -   If yes, how much, and when and where?
+    -   What is the sd, mean, and median
+        -   box plot
+        -   violin
+        -   scatter points, epidemic, sporadic
+    -   Daily variations to examine it related to the heating
+        -   2 peaks: smaller and bigger
+        -   compare the t-duration exceeds 50mug/m3/hour
+
+    4.  Does it has distinct patterns among the sites regarding to the
+        drivings
+
+    -   How PMs varies with the wind speed and visibility
+    -   Do they differently explained with variables and changes in
+        drivings (with PCA analysis)
+
+    5.  Is there any significant changes in time-series of PMs at 4
+        seasons
+    6.  Is there any significant changes in ratio in the spring in
+        respect to winter?
+
+        The present study will contribute significantly to the understanding
+            of air particulate matter patterns in Mongolia and providing
+            comprehensive data insights for policymakers and public health
+            sectors. Our findings is useful not only for addressing national health
+            impacts but also beneficial for understanding air particulate matter
+            as ambient air pollution, and tackling atmospheric aerosol effects
+            in the climate system, and revealing their transboundary effects to
+            the downwind regions in South-east Asia.
+
+
+## Results
+### The spatio-temporal variations of the PMs at the study sites
+To comparatively examine the spatio-difference regarding to the emissions of PMs, we illustrated the hourly observed values of PM10 and PM2.5 for all sites (figure_3). On each site, PM10 is more sporadic than PM2.5 due to dust epidemic nature. In conjunction, the mean values averaged from hourly values are larger than its median concentrations both on PM10 and PM2.5 for all sites. The mean variables of p-value show that concentrations of particulate matters significantly differ with 99% confident levels at all sites (figure_3), except  95% confident level between DZ and UB on PM10 (figure_3a). It clearly exhibits general variations of particulate matters as expected and emphasizes that the significant difference in the concentration values among the sites. Besides all sites are quantitatively differ by the values of concentrations in particulate matters, there are two main characteristics can be seen when we compare the median deviations from its mean values etc.
+
+- such patterns are strongly manifested in ZU and SS sites.  
+- the mean values those averaged from hourly concentrations of PM10 and PM2.5 is larger than its median are strongly manifested for all in UB and DZ sites.
+- Additionally, consider the significance of the ..
+
+This highlight that the fine and coarse particulate matters significantly vary among sites of urban and rural sites, and even within Gobi (rural) sites.
+Moreover, .... has a diversely characteristically diversified in respect with the PM2.5 (fine) to PM10 (coarse) particulates.,. which requires urban impacts
+
+
+To reveal the natural and anthropogenic impacts on the concentrations of particulate matters, we demonstrated annual variations of PM10 and PM2.5 for each sites (figure_4).
+3.  Do PM2.5 particulates has contributed to the PM10 annual
+    variations?
+      Distinct temporal variations has existed among the sites.
+        -   PM2.5 particulates has contributed to the PM10 annual
+            variations in UB and in DZ in winter.
+            -   If yes, how much, and when and where?
+            -   What is the sd, mean, and median
+                -   box plot
+                -   violin
+                -   scatter points, epidemic, sporadic
+            -   Daily variations to examine it related to the heating
+                -   2 peaks: smaller and bigger
+                -   compare the t-duration exceeds 50mug/m3/hour
+
+
+[Therefore] SS and ZU sites are mainly affected by the spring dust, followed by the autumn dust. Annual maximum in the winter for DZ and UB are from PM2.5, which results an increase in PM10.
+It requires the cause the behind such the variations. DZ site is polluted in the winter by the heating and in the spring by the natural dust.
+
+
+
+[Therefore] Spatio-temporally in two class; consists of 2 Gobi sites, and 1 urban plus urbanized Gobi sites.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### The emission patterns of interrelations among meteorological variables at the study sites
+
+        -   PMs varies with the wind speed and visibility
+        -   In general, three distinct patterns were resulted with PCA
+            analysis, which is in consistent with temporal variation.
+            explained with variables and changes in drivings (with PCA
+            analysis)
+
+
+DZ site is polluted in the winter by the heating and in the spring by the natural dust.
+
+### The recent trends in concentrations of PMS and fine-coarse
+
+        fractional changes at the sites
+        -   There are significant changes in time-series of PMs at 4
+            seasons
+        -   There any significant changes in ratio in the spring in
+            respect to winter in DZ.
+        -   Close relationships was found between PM2.5 in winter and r
+            values in the spring.
+
+## Conclusions
+
+-   The spatio-temporal variations of the PMs at the study sites
+        -   Concentrations of particulate matters differ in between
+            urban and rural sites, and even within Gobi sites.
+        -   Distinct temporal variations has existed among the sites.
+        -   PM2.5 particulates has contributed to the PM10 annual
+            variations in UB and in DZ in winter.
+            -   If yes, how much, and when and where?
+            -   What is the sd, mean, and median
+                -   box plot
+                -   violin
+                -   scatter points, epidemic, sporadic
+            -   Daily variations to examine it related to the heating
+                -   2 peaks: smaller and bigger
+                -   compare the t-duration exceeds 50mug/m3/hour
+    -   The emission patterns of interrelations among meteorological
+        variables at the study sites
+        -   PMs varies with the wind speed and visibility
+        -   In general, three distinct patterns were resulted with PCA
+            analysis, which is in consistent with temporal variation.
+            explained with variables and changes in drivings (with PCA
+            analysis)
+    -   The recent trends in concentrations of PMS and fine-coarse
+        fractional changes at the sites
+        -   There are significant changes in time-series of PMs at 4
+            seasons
+        -   There any significant changes in ratio in the spring in
+            respect to winter PM2.5 in DZ.
+    -   Close relationships was found between PM2.5 in winter and r
+        values in the spring. Thus, our research results clearly proves
+        the distinct variations in PMs has emerged. The dust fine-coarse
+        fractions was manifested at the town center for the Gobi sites,
+        which reveals the that Mongolian dust composites not only coarse
+        dust, but also fine particulate matters. The particulates likely
+        consisted of the black carbon, which may give a substantial
+        effect on climate systems. if this trend continues on as coal
+        consumption with the population growth in the future.
+    -   CO Carbon monoxide is obtained due to incomplete combustion of
+        charcoal in a closed room.
+    -   CO2
 
 \newpage
 
@@ -171,8 +281,9 @@ sites](images/figure_3.png){width="300"}
 ![Annual variations of \$PM\_{10}\$ and
 \$PM\_{2.5}\$](images/figure_4.png){width="330"}
 
- 1. Clear annual variations at UB and DZ from pm2.5 pollutions 2. at ZU,
-and SS has a seasonally peaks episodic spring and late autumn from PM10
+1.  Clear annual variations at UB and DZ from pm2.5 pollutions 2. at ZU,
+    and SS has a seasonally peaks episodic spring and late autumn from
+    PM10
 
 \newpage
 
