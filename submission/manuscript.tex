@@ -1,13 +1,11 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+%
 \documentclass[
   11pt,
 ]{article}
-\usepackage{xcolor}
-\usepackage[margin=1.0in]{geometry}
 \usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -38,24 +36,25 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
+\usepackage{xcolor}
+\usepackage[margin=1.0in]{geometry}
 \usepackage{graphicx}
 \makeatletter
-\newsavebox\pandoc@box
-\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
-  \sbox\pandoc@box{#1}%
-  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
-  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
-  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
-  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
-  \else\usebox{\pandoc@box}%
-  \fi%
-}
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 % Set default figure placement to htbp
+\makeatletter
 \def\fps@figure{htbp}
 \makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{helvet} % Helvetica font
 \renewcommand*\familydefault{\sfdefault} % Use the sans serif version of the font
 \usepackage[T1]{fontenc}
@@ -69,6 +68,9 @@
 \usepackage{lineno}
 
 \usepackage{pdfpages}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -108,7 +110,7 @@ Ann Arbor, MI 48109
 \newpage
 \linenumbers
 
-\subsection{Abstract}\label{abstract}
+\subsection{Abstract (150 words)}\label{abstract-150-words}
 
 Storyline:
 
@@ -145,6 +147,27 @@ Storyline:
 \end{enumerate}
 
 \subsection{Introduction}\label{introduction}
+
+\begin{verbatim}
+* Advanced the knowledge of global dust, has reached to recognize the sources,.
+  - Classification dust brown color, seasonal characteristics, with coarse fractions.
+  - This knowledge further efficient to climate system when elaborating dust-aerosol effects.
+  - But, a large uncertainties in the global dust model has existed so for climate models which clearly limits our understanding the climate system and shape the facing global issues of global warming.
+  - This is mainly caused by the lack of parameterization and recognition of iterative changes controlled by the natural forces and anthropogenic drivings.
+
+* Mongolian dust brown color, seasonal characteristics, with coarse fractions.
+  - Mongolian dust has an attention of the its mass fraction in global dust, yet unlikely elaborated in the climate models due to its majority of coarse fraction for its a small contribution to the climate system through its radiative feedback.
+  - But, such recognized characterization might get no longer valid due to recent change in the driving of the emissions of air particulate matters. A large high concentrations of PM2.5 in the capital city of Mongolia has been observed  as a result of the heavy consumptions of coal as a winter heating has rapidly spread as a mining industry taken off since 2000. Winter weather stagnant conditions governed by the Siberian magnifies the concentrations of the particulate matter emissions by trapping the polluted air below the boundary layer, so that results in a very large high concentrations of PM2.5, locally. Even  recognized as one of the highly polluted capital cities in the world.
+  - Therefore, It is important to examine the emerging changes and shifting patterns of air particulate matters in Mongolia. More importantly, it is essential to reveal the significant changes in the the altered fraction particularly, in the dust seasons considering its high potential of intriuging in the free atmosphere to transported in the long-distance, so carrying capacity of the role to shift the global climate system, and its side impacts on downwind regions.
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Study goal - We hypothesize \ldots{} - Our study will benefit not only
+  to the global dust research but also climate, and further to the
+  country itself for urban planning, and coal combustion.
+\end{itemize}
 
 \subsection{Research Qs}\label{research-qs}
 
@@ -353,7 +376,7 @@ fine-coarse}\label{the-recent-trends-in-concentrations-of-pms-and-fine-coarse}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_3.png}
+\includegraphics[width=3.125in,height=\textheight]{images/figure_3.png}
 \caption{Distinct concentrations of coarse and fine particulates among
 sites}
 \end{figure}
@@ -370,7 +393,7 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.4375in,height=\textheight,keepaspectratio]{images/figure_4.png}
+\includegraphics[width=3.4375in,height=\textheight]{images/figure_4.png}
 \caption{Annual variations of \$PM\_\{10\}\$ and \$PM\_\{2.5\}\$}
 \end{figure}
 
@@ -387,7 +410,7 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_5.png}
+\includegraphics[width=3.125in,height=\textheight]{images/figure_5.png}
 \caption{Daily variations of \(PM_{10}\) and \(PM_{2.5}\) at UB and DZ
 sites}
 \end{figure}
@@ -398,7 +421,7 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_6.png}
+\includegraphics[width=3.125in,height=\textheight]{images/figure_6.png}
 \caption{Relationships between meteorological major factors and
 variations of \(PM_{10}\) and \(PM_{2.5}\)}
 \end{figure}
@@ -407,14 +430,14 @@ variations of \(PM_{10}\) and \(PM_{2.5}\)}
 
 \begin{figure}
 \centering
-\includegraphics[width=2.08333in,height=\textheight,keepaspectratio]{images/figure_7.png}
+\includegraphics[width=2.08333in,height=\textheight]{images/figure_7.png}
 \caption{Spatio-temporal distinct feature of variations of \(PM_{10}\)
 and \(PM_{2.5}\) with PCA analysis}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=2.08333in,height=\textheight,keepaspectratio]{images/figure_7b.png}
+\includegraphics[width=2.08333in,height=\textheight]{images/figure_7b.png}
 \caption{Patterns of meteorology and PMs at the 4 sites}
 \end{figure}
 
@@ -423,7 +446,7 @@ and \(PM_{2.5}\) with PCA analysis}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_8.png}
+\includegraphics[width=3.125in,height=\textheight]{images/figure_8.png}
 \caption{Interannual and seasonal trends of \(PM_{10}\) and \(PM_{2.5}\)
 variations}
 \end{figure}
@@ -514,6 +537,58 @@ Following problems
 
 \subsection{Materials and Methods}\label{materials-and-methods}
 
+\subsubsection{Materials}\label{materials}
+
+\subsubsection{Methods 3,000 words}\label{methods-3000-words}
+
+\subsection{Acknowledgements}\label{acknowledgements}
+
+Keep acknowledgements brief and do not include thanks to anonymous
+referees or editors, or effusive comments. Grant or contribution numbers
+may be acknowledged.
+
+\subsection{Figures (10)}\label{figures-10}
+
+Figure legends should be \textless350 words each. They should begin with
+a brief title sentence for the whole figure and continue with a short
+statement of what is depicted in the figure, not the results (or data)
+of the experiment or the methods used. Legends should be detailed enough
+so that each figure and caption can, as far as possible, be understood
+in isolation from the main text.
+
+Tables. Each table should be prepared using the Table menu in Word or
+the table environment in TeX/LaTeX and accompanied by a short title
+sentence describing what the table shows. Further details can be
+included as footnotes to the table.
+
+\subsection{References (70)}\label{references-70}
+
+\subsection{Supplementary}\label{supplementary}
+
+Author contributions. You must include a statement that specifies the
+individual contributions of each co-author. For example: ``A.P.M.
+`contributed' Y and Z; B.T.R. `contributed' Y,'' etc. See our authorship
+policies for more details.
+
+Competing interests. Submission of a competing interests statement is
+required for all content of the journal.
+
+Materials \& Correspondence. Indicate the author(s) to whom
+correspondence and material requests should be addressed.
+
+Supplementary information Please submit supplementary figures, small
+tables and text as a single combined PDF document. Tables longer than
+one page should be provided as an Excel or similar file type. For
+optimal quality video files please use H.264 encoding, the standard
+aspect ratio of 16:9 (4:3 is second best) and do not compress the video.
+We encourage submission of step-by-step synthesis procedures for
+chemical compounds and data on compound characterization. Supplementary
+information is not copyedited, so please ensure that it is clearly and
+succinctly presented, and that the style and terminology conform to the
+rest of the manuscript.
+
+\subsection{Materials and Methods}\label{materials-and-methods-1}
+
 \subsubsection{A description of study
 sites}\label{a-description-of-study-sites}
 
@@ -571,11 +646,11 @@ example:
 
 \newpage
 
-\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_1.png}{]}
+\includegraphics[width=3.125in,height=\textheight]{images/figure_1.png}{]}
 
 \begin{figure}
 \centering
-\includegraphics[width=4.16667in,height=\textheight,keepaspectratio]{images/table_1.png}
+\includegraphics[width=4.16667in,height=\textheight]{images/table_1.png}
 \caption{\textbf{Table 1}. A description of datasets obtained at the
 sites}
 \end{figure}
@@ -584,7 +659,7 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/scheme_1.png}
+\includegraphics[width=3.125in,height=\textheight]{images/scheme_1.png}
 \caption{Scheme 1. Data handling procedure}
 \end{figure}
 
@@ -592,13 +667,13 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_2b.png}
+\includegraphics[width=3.125in,height=\textheight]{images/figure_2b.png}
 \caption{Figure 2. Data gap filling}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_2c.png}
+\includegraphics[width=3.125in,height=\textheight]{images/figure_2c.png}
 \caption{Figure 2b. Data gap filling}
 \end{figure}
 

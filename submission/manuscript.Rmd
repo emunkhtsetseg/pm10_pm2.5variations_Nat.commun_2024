@@ -66,7 +66,7 @@ Ann Arbor, MI 48109
 \newpage
 \linenumbers
 
-## Abstract
+## Abstract (150 words)
 
 Storyline:
 
@@ -91,12 +91,23 @@ Storyline:
 7.  r ratio shows ... emission source; dust might carry anthropogenic
     fine particulates as well. \newpage
 
+
+
 ## Introduction
+    * Advanced the knowledge of global dust, has reached to recognize the sources,.
+      - Classification dust brown color, seasonal characteristics, with coarse fractions.
+      - This knowledge further efficient to climate system when elaborating dust-aerosol effects.
+      - But, a large uncertainties in the global dust model has existed so for climate models which clearly limits our understanding the climate system and shape the facing global issues of global warming.
+      - This is mainly caused by the lack of parameterization and recognition of iterative changes controlled by the natural forces and anthropogenic drivings.
 
+    * Mongolian dust brown color, seasonal characteristics, with coarse fractions.
+      - Mongolian dust has an attention of the its mass fraction in global dust, yet unlikely elaborated in the climate models due to its majority of coarse fraction for its a small contribution to the climate system through its radiative feedback.
+      - But, such recognized characterization might get no longer valid due to recent change in the driving of the emissions of air particulate matters. A large high concentrations of PM2.5 in the capital city of Mongolia has been observed  as a result of the heavy consumptions of coal as a winter heating has rapidly spread as a mining industry taken off since 2000. Winter weather stagnant conditions governed by the Siberian magnifies the concentrations of the particulate matter emissions by trapping the polluted air below the boundary layer, so that results in a very large high concentrations of PM2.5, locally. Even  recognized as one of the highly polluted capital cities in the world.
+      - Therefore, It is important to examine the emerging changes and shifting patterns of air particulate matters in Mongolia. More importantly, it is essential to reveal the significant changes in the the altered fraction particularly, in the dust seasons considering its high potential of intriuging in the free atmosphere to transported in the long-distance, so carrying capacity of the role to shift the global climate system, and its side impacts on downwind regions.
 
-
-
-
+* Study goal
+      - We hypothesize ...
+      - Our study will benefit not only to the global dust research but also climate, and further to the country itself for urban planning, and coal combustion.
 
 
 ## Research Qs
@@ -383,6 +394,54 @@ Following problems
           (Mirabelli et al., 2020).
 
 \newpage
+
+## Materials and Methods
+
+### Materials
+
+### Methods  3,000 words
+
+## Acknowledgements
+Keep acknowledgements brief and do not include thanks to anonymous referees or editors, or effusive
+comments. Grant or contribution numbers may be acknowledged.
+
+## Figures (10)
+Figure legends should be <350 words each. They should begin with a
+brief title sentence for the whole figure and continue with a short
+statement of what is depicted in the figure, not the results (or data) of
+the experiment or the methods used. Legends should be detailed enough
+so that each figure and caption can, as far as possible, be understood in
+isolation from the main text.
+
+Tables. Each table should be prepared using the Table menu in Word or
+the table environment in TeX/LaTeX and accompanied by a short title
+sentence describing what the table shows. Further details can be
+included as footnotes to the table.
+
+
+## References (70)
+
+## Supplementary
+Author contributions. You must include a statement that specifies the
+individual contributions of each co-author. For example: "A.P.M.
+‘contributed’ Y and Z; B.T.R. ‘contributed’ Y,” etc. See our authorship
+policies for more details.
+
+Competing interests. Submission of a competing interests statement is
+required for all content of the journal.
+
+Materials & Correspondence. Indicate the author(s) to whom
+correspondence and material requests should be addressed.
+
+Supplementary information
+Please submit supplementary figures, small tables and text as a single
+combined PDF document. Tables longer than one page should be
+provided as an Excel or similar file type. For optimal quality video files
+please use H.264 encoding, the standard aspect ratio of 16:9 (4:3 is
+second best) and do not compress the video. We encourage submission
+of step-by-step synthesis procedures for chemical compounds and data
+on compound characterization. Supplementary information is not copyedited, so please ensure that it is clearly and succinctly presented, and
+that the style and terminology conform to the rest of the manuscript.
 
 ## Materials and Methods
 
