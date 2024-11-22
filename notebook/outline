@@ -19,17 +19,22 @@
 
 ## Results
 * The spatio-temporal variations of the PMs at the study sites
-  - Concentrations of particulate matters differ in between urban and rural sites, and even within Gobi sites.
-  - Distinct temporal variations has existed among the sites.
-  - PM2.5 particulates has contributed to the PM10 annual variations in UB and in DZ in winter.
-    - If yes, how much, and when and where?
-    - What is the sd, mean, and median
-      - box plot
-      - violin
-      - scatter points, epidemic, sporadic
-    - Daily variations to examine it related to the heating
-      - 2 peaks: smaller and bigger
-      - compare the t-duration exceeds 50mug/m3/hour
+To evaluate the spatial variations in particulate matter (PM) concentrations, we displayed hourly observed values of PM10 and PM2.5 for all study sites (figure_3). The mean p-values indicate that PM concentrations differ significantly at a 99% confidence level across all sites (figure_3), with the exception of a 95% confidence level between DZ and UB for PM10 (figure_3a), highlighting substantial concentration disparities among sites. While quantitative differences in PM concentration values exist across all sites, two key patterns emerge when examining median deviations from mean values and irregular observation fluctuations. For instance, PM10 demonstrates more erratic behavior than PM2.5 at each location, particularly evident at ZU and SS sites. Furthermore, the mean values calculated from hourly measurements surpass the median concentrations for both PM10 and PM2.5 across all sites, with notable prominence at UB and DZ locations. Consequently, significant spatial differences in PM concentrations exist among all sites, regardless of urban or rural classification. However, the sites can be categorized into two groups based on their characteristics: UB (urban) and DZ (rural town, Gobi); and SS (rural, Gobi) and ZU (rural, Gobi). These findings for DZ appear to support our hypothesis of emerging new emission patterns related to increased coal consumption during winter months.
+
+[AND] To examine the PM emerging patterns whether it related to household heating fuel, we demonstrated annual variations in PM10 and PM2.5 concentrations at the sites.
+[AND] Significant annual variations in PM10 and PM2.5 levels demonstrating higher concentrations in colder months and lower concentrations in warmer months at UB and DZ sites.
+
+[AND] During colder months (January, November, December), PM10 concentrations contributed by elevated levels in PM2.5 were exceed 100 $\mu g/m^3$, accompanied by PM10 and PM2.5 concentrations reached their lowest points during warmer months (May-September), with medians and ranges consistently below 50 $\mu g/m^3$. This distinct seasonal trend, peaking during the same cold months are supported by the diurnal variations in PM10 and PM2.5 concentrations at sites DZ and UB. A pronounced daily cycle is evident, at both DZ and UB sites, where PM concentrations peak during nighttime and early morning hours (approximately 8 PM to 4 AM UTC), with median values surpassing 50 $\mu g/m^3$. PM2.5 concentrations consistently follow a similar pattern but remain lower than PM10. In contrast, both pollutants exhibit reduced concentrations during daytime hours (8AM to 4PM UTC), likely due to increased atmospheric dispersion. At site UB, a comparable daily trend is observed, but with longer (approximately 8 PM to 5 AM UTC) elevated concentrations. The variability, indicated by the interquartile range, is higher during nighttime, suggesting the influence of localized emission sources and reduced boundary layer mixing. These diurnal patterns underscore the temporal dynamics of air pollution, influenced by both anthropogenic activities and meteorological conditions.
+
+Analysis of PM10 and PM2.5 concentrations revealed that ZU and SS maintained significantly lower levels throughout the year with the sudden frequent burst in the spring and followed by some instances in the autumn, illustrating dust and sand storms in the Gobi. Such instances also observed at the DZ site. DZ site is polluted in the winter by the heating and in the spring by the natural dust.
+
+
+To see the fluctuations of hourly observations for the months, we used the violin plot. This shows that the hourly fluctuations are extemely high in the winter months.
+This clearly states that .... DZ and UB are from the ... household ., that concentration can be as high as a arctic oscillation/Siberian high intensifies with the heating; whereas it can be low as it loose or may combination of heating demand drops. Therefore, meteorological effects seems to play in a large role.
+
+[THEREFORE] PM10 and PM2.5 concentrations are larger in the spring followed by the autumn for SS and ZU sites. Annual PM10 and PM2.5 concentrations peaks in the winter aligned with the daily variations happens at the heating time for DZ and UB sites. This points that the increase in PM2.5 and PM10 is from the coal combustion.
+
+
 
 * The emission patterns of interrelations among meteorological variables at the study sites
   - PMs varies with the wind speed and visibility

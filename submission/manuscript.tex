@@ -1,11 +1,13 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-%
 \documentclass[
   11pt,
 ]{article}
+\usepackage{xcolor}
+\usepackage[margin=1.0in]{geometry}
 \usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -36,25 +38,34 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\usepackage[margin=1.0in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{helvet} % Helvetica font
 \renewcommand*\familydefault{\sfdefault} % Use the sans serif version of the font
 \usepackage[T1]{fontenc}
@@ -68,9 +79,6 @@
 \usepackage{lineno}
 
 \usepackage{pdfpages}
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -94,18 +102,17 @@ Running title: INSERT RUNNING TITLE HERE
 
 \vspace{35mm}
 
-Munkh\^{}1, Joeseph P. Schmo\^{}2, Sally J. Rivers\^{}1, Patrick D.
-Schloss\textsuperscript{1}\(\dagger\)
+Munkhtsetseg\^{}1\^{}5\(^*\), Shimizu. A\^{}2, Matsuki. A\^{}3, Batdorj.
+D\^{}4, Matsui. H\^{}1\(^*\)
 
 \vspace{40mm}
 
-\(\dagger\) To whom correspondence should be addressed:
-\href{mailto:pschloss@umich.edu}{\nolinkurl{pschloss@umich.edu}}
+\(^*\) To whom correspondence should be addressed:
+\href{mailto:e.munkhtsetseg@yahoo.com}{\nolinkurl{e.munkhtsetseg@yahoo.com}}
 
-1. Department of Microbiology and Immunology, University of Michigan,
-Ann Arbor, MI 48109
+1. Nagoya University, Japan
 
-2. Other department contact information
+2. NIES
 
 \newpage
 \linenumbers
@@ -164,9 +171,17 @@ Storyline:
 \begin{itemize}
 \tightlist
 \item
-  Study goal - We hypothesize \ldots{} - Our study will benefit not only
-  to the global dust research but also climate, and further to the
-  country itself for urban planning, and coal combustion.
+  Study goal
+
+  \begin{itemize}
+  \tightlist
+  \item
+    We hypothesize \ldots{}
+  \item
+    Our study will benefit not only to the global dust research but also
+    climate, and further to the country itself for urban planning, and
+    coal combustion.
+  \end{itemize}
 \end{itemize}
 
 \subsection{Research Qs}\label{research-qs}
@@ -224,74 +239,155 @@ particulates has contributed to the PM10 annual variations?
 \subsubsection{The spatio-temporal variations of the PMs at the study
 sites}\label{the-spatio-temporal-variations-of-the-pms-at-the-study-sites}
 
-To comparatively examine the spatio-difference regarding to the
-emissions of PMs, we illustrated the hourly observed values of PM10 and
-PM2.5 for all sites (figure\_3). On each site, PM10 is more sporadic
-than PM2.5 due to dust epidemic nature. In conjunction, the mean values
-averaged from hourly values are larger than its median concentrations
-both on PM10 and PM2.5 for all sites. The mean variables of p-value show
-that concentrations of particulate matters significantly differ with
-99\% confident levels at all sites (figure\_3), except 95\% confident
-level between DZ and UB on PM10 (figure\_3a). It clearly exhibits
-general variations of particulate matters as expected and emphasizes
-that the significant difference in the concentration values among the
-sites. Besides all sites are quantitatively differ by the values of
-concentrations in particulate matters, there are two main
-characteristics can be seen when we compare the median deviations from
-its mean values etc.
+\subsection{To evaluate the spatial variations in particulate matter
+(PM) concentrations, we displayed hourly observed values of PM10 and
+PM2.5 for all study sites (figure\_3). The mean p-values indicate that
+PM concentrations differ significantly at a 99\% confidence level across
+all sites (figure\_3), with the exception of a 95\% confidence level
+between DZ and UB for PM10 (figure\_3a), highlighting substantial
+concentration disparities among sites. While quantitative differences in
+PM concentration values exist across all sites, two key patterns emerge
+when examining median deviations from mean values and irregular
+observation fluctuations. For instance, PM10 demonstrates more erratic
+behavior than PM2.5 at each location, particularly evident at ZU and SS
+sites. Furthermore, the mean values calculated from hourly measurements
+surpass the median concentrations for both PM10 and PM2.5 across all
+sites, with notable prominence at UB and DZ locations. Consequently,
+significant spatial differences in PM concentrations exist among all
+sites, regardless of urban or rural classification. However, the sites
+can be categorized into two groups based on their characteristics: UB
+(urban) and DZ (rural town, Gobi); and SS (rural, Gobi) and ZU (rural,
+Gobi). These findings for DZ appear to support our hypothesis of
+emerging new emission patterns related to increased coal consumption
+during winter
+months.}\label{to-evaluate-the-spatial-variations-in-particulate-matter-pm-concentrations-we-displayed-hourly-observed-values-of-pm10-and-pm2.5-for-all-study-sites-figure_3.-the-mean-p-values-indicate-that-pm-concentrations-differ-significantly-at-a-99-confidence-level-across-all-sites-figure_3-with-the-exception-of-a-95-confidence-level-between-dz-and-ub-for-pm10-figure_3a-highlighting-substantial-concentration-disparities-among-sites.-while-quantitative-differences-in-pm-concentration-values-exist-across-all-sites-two-key-patterns-emerge-when-examining-median-deviations-from-mean-values-and-irregular-observation-fluctuations.-for-instance-pm10-demonstrates-more-erratic-behavior-than-pm2.5-at-each-location-particularly-evident-at-zu-and-ss-sites.-furthermore-the-mean-values-calculated-from-hourly-measurements-surpass-the-median-concentrations-for-both-pm10-and-pm2.5-across-all-sites-with-notable-prominence-at-ub-and-dz-locations.-consequently-significant-spatial-differences-in-pm-concentrations-exist-among-all-sites-regardless-of-urban-or-rural-classification.-however-the-sites-can-be-categorized-into-two-groups-based-on-their-characteristics-ub-urban-and-dz-rural-town-gobi-and-ss-rural-gobi-and-zu-rural-gobi.-these-findings-for-dz-appear-to-support-our-hypothesis-of-emerging-new-emission-patterns-related-to-increased-coal-consumption-during-winter-months.}
 
-\begin{itemize}
+{[}AND{]} To examine the PM emerging patterns whether it related to
+household heating fuel, we demonstrated annual variations in PM10 and
+PM2.5 concentrations at the sites. {[}AND{]} Significant annual
+variations in PM10 and PM2.5 levels demonstrating higher concentrations
+in colder months and lower concentrations in warmer months at UB and DZ
+sites.
+
+{[}AND{]} During colder months (January, November, December), PM10
+concentrations contributed by elevated levels in PM2.5 were exceed 100
+\(\mu g/m^3\), accompanied by PM10 and PM2.5 concentrations reached
+their lowest points during warmer months (May-September), with medians
+and ranges consistently below 50 \(\mu g/m^3\). This distinct seasonal
+trend, peaking during the same cold months are supported by the diurnal
+variations in PM10 and PM2.5 concentrations at sites DZ and UB. A
+pronounced daily cycle is evident, at both DZ and UB sites, where PM
+concentrations peak during nighttime and early morning hours
+(approximately 8 PM to 4 AM UTC), with median values surpassing 50
+\(\mu g/m^3\). PM2.5 concentrations consistently follow a similar
+pattern but remain lower than PM10. In contrast, both pollutants exhibit
+reduced concentrations during daytime hours (8AM to 4PM UTC), likely due
+to increased atmospheric dispersion. At site UB, a comparable daily
+trend is observed, but with lower overall concentrations and less
+pronounced peaks. The variability, indicated by the interquartile range,
+is higher during nighttime, suggesting the influence of localized
+emission sources and reduced boundary layer mixing. These diurnal
+patterns underscore the temporal dynamics of air pollution, influenced
+by both anthropogenic activities and meteorological conditions.
+
+\begin{longtable}[]{@{}l@{}}
+\toprule\noalign{}
+nalysis of PM10 and PM2.5 concentrations revealed that ZU and SS
+maintained significantly lower levels throughout the year, while UB and
+DZ exhibited higher concentrations, especially during colder months. The
+consistently lower particulate matter levels at ZU and SS suggest
+localized differences in pollution sources and dispersion patterns.
+These results underscore the seasonal and spatial variability in air
+quality, likely influenced by meteorological conditions and human
+activities. The observed seasonal patterns in PM10 and PM2.5
+concentrations may be attributed to changes in weather conditions and
+anthropogenic activities. \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+high with violin meteorological effects \\
+\end{longtable}
+
+Annual maximum in the winter for DZ and UB are from PM2.5, which results
+an increase in PM10.
+
+clearly states that \ldots. DZ and UB are from the \ldots{} household .,
+that concentration can be as high as a arctic oscillation/Siberian high
+intensifies with the heating, as low as it loose or may combination of
+heating demand drops.
+
+{[}BUT{]}
+
+{[}THEREFORE{]} PM10 and PM2.5 concentrations are larger in the spring
+followed by the autumn for SS and ZU sites. Annual PM10 and PM2.5
+concentrations peaks in the winter aligned with the daily variations
+happens at the heating time for SS and ZU sites. This points that the
+increase in PM2.5 and PM10 is from the coal combustion. It requires the
+cause the behind such the variations. DZ site is polluted in the winter
+by the heating and in the spring by the natural dust.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
 \tightlist
 \item
-  such patterns are strongly manifested in ZU and SS sites.\\
-\item
-  the mean values those averaged from hourly concentrations of PM10 and
-  PM2.5 is larger than its median are strongly manifested for all in UB
-  and DZ sites.
-\item
-  Additionally, consider the significance of the ..
-\end{itemize}
-
-This highlight that the fine and coarse particulate matters
-significantly vary among sites of urban and rural sites, and even within
-Gobi (rural) sites. Moreover, \ldots. has a diversely characteristically
-diversified in respect with the PM2.5 (fine) to PM10 (coarse)
-particulates.,. which requires urban impacts
-
-To reveal the natural and anthropogenic impacts on the concentrations of
-particulate matters, we demonstrated annual variations of PM10 and PM2.5
-for each sites (figure\_4). 3. Do PM2.5 particulates has contributed to
-the PM10 annual variations? Distinct temporal variations has existed
-among the sites. - PM2.5 particulates has contributed to the PM10 annual
-variations in UB and in DZ in winter. - If yes, how much, and when and
-where? - What is the sd, mean, and median - box plot - violin - scatter
-points, epidemic, sporadic - Daily variations to examine it related to
-the heating - 2 peaks: smaller and bigger - compare the t-duration
-exceeds 50mug/m3/hour
-
-{[}Therefore{]} SS and ZU sites are mainly affected by the spring dust,
-followed by the autumn dust. Annual maximum in the winter for DZ and UB
-are from PM2.5, which results an increase in PM10. It requires the cause
-the behind such the variations. DZ site is polluted in the winter by the
-heating and in the spring by the natural dust.
-
-{[}Therefore{]} Spatio-temporally in two class; consists of 2 Gobi
-sites, and 1 urban plus urbanized Gobi sites.
+  Do PM2.5 particulates has contributed to the PM10 annual variations?
+  Distinct temporal variations has existed among the sites. - PM2.5
+  particulates has contributed to the PM10 annual variations in UB and
+  in DZ in winter. - If yes, how much, and when and where? - What is the
+  sd, mean, and median - box plot - violin - scatter points, epidemic,
+  sporadic - Daily variations to examine it related to the heating - 2
+  peaks: smaller and bigger - compare the t-duration exceeds
+  50mug/m3/hour
+\end{enumerate}
 
 \subsubsection{The emission patterns of interrelations among
 meteorological variables at the study
 sites}\label{the-emission-patterns-of-interrelations-among-meteorological-variables-at-the-study-sites}
 
-\begin{verbatim}
-    -   PMs varies with the wind speed and visibility
-    -   In general, three distinct patterns were resulted with PCA
-        analysis, which is in consistent with temporal variation.
-        explained with variables and changes in drivings (with PCA
-        analysis)
-\end{verbatim}
+{[}AND{]} To distinguish the emission driving variables, at first we
+demonstrated interrelations between wind speed, visibility among
+particulate matters of PM10 and PM2.5 for each sites (figure\_4).
+
+Figure 6 illustrates the relationship between PM10 and PM2.5
+concentrations across the four sites (UB, DZ, ZU, and SS) for different
+seasons, alongside variations in wind speed (WS) and visibility (VIS).
+At all sites, a strong positive correlation between PM10 and PM2.5 is
+evident, as highlighted by the linear trendlines. The slopes suggest
+proportionality, with PM2.5 typically contributing a significant
+fraction of PM10 concentrations.
+
+Seasonal differences are prominent, with higher PM concentrations
+observed during November-February (marked as \("+"\) symbols),
+particularly at UB and DZ, where values significantly exceed those from
+other periods. Wind speed and visibility also exhibit notable
+interactions; higher PM concentrations tend to correspond to lower wind
+speeds (smaller circles) and reduced visibility (darker blue points).
+Conversely, during March--June and July--October, marked by circles and
+triangles, respectively, the overall concentrations are lower,
+especially at ZU and SS, indicating better air quality conditions likely
+due to more favorable meteorological factors.
+
+The site DZ shows the largest variability in PM concentrations, with
+extreme outliers during high-pollution periods. SS, on the other hand,
+exhibits relatively low PM levels across all seasons, aligning with its
+less polluted status. These results underscore the importance of local
+factors, including meteorological conditions and emission sources, in
+driving the observed PM dynamics.
 
 DZ site is polluted in the winter by the heating and in the spring by
 the natural dust.
+
+\begin{itemize}
+\tightlist
+\item
+  PMs varies with the wind speed and visibility
+\item
+  In general, three distinct patterns were resulted with PCA analysis,
+  which is in consistent with temporal variation. explained with
+  variables and changes in drivings (with PCA analysis)
+\end{itemize}
 
 \subsubsection{The recent trends in concentrations of PMS and
 fine-coarse}\label{the-recent-trends-in-concentrations-of-pms-and-fine-coarse}
@@ -376,7 +472,7 @@ fine-coarse}\label{the-recent-trends-in-concentrations-of-pms-and-fine-coarse}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight]{images/figure_3.png}
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_3.png}
 \caption{Distinct concentrations of coarse and fine particulates among
 sites}
 \end{figure}
@@ -393,7 +489,7 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.4375in,height=\textheight]{images/figure_4.png}
+\includegraphics[width=3.4375in,height=\textheight,keepaspectratio]{images/figure_4.png}
 \caption{Annual variations of \$PM\_\{10\}\$ and \$PM\_\{2.5\}\$}
 \end{figure}
 
@@ -410,7 +506,7 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight]{images/figure_5.png}
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_5.png}
 \caption{Daily variations of \(PM_{10}\) and \(PM_{2.5}\) at UB and DZ
 sites}
 \end{figure}
@@ -421,7 +517,7 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight]{images/figure_6.png}
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_6.png}
 \caption{Relationships between meteorological major factors and
 variations of \(PM_{10}\) and \(PM_{2.5}\)}
 \end{figure}
@@ -430,14 +526,14 @@ variations of \(PM_{10}\) and \(PM_{2.5}\)}
 
 \begin{figure}
 \centering
-\includegraphics[width=2.08333in,height=\textheight]{images/figure_7.png}
+\includegraphics[width=2.08333in,height=\textheight,keepaspectratio]{images/figure_7.png}
 \caption{Spatio-temporal distinct feature of variations of \(PM_{10}\)
 and \(PM_{2.5}\) with PCA analysis}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=2.08333in,height=\textheight]{images/figure_7b.png}
+\includegraphics[width=2.08333in,height=\textheight,keepaspectratio]{images/figure_7b.png}
 \caption{Patterns of meteorology and PMs at the 4 sites}
 \end{figure}
 
@@ -446,7 +542,7 @@ and \(PM_{2.5}\) with PCA analysis}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight]{images/figure_8.png}
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_8.png}
 \caption{Interannual and seasonal trends of \(PM_{10}\) and \(PM_{2.5}\)
 variations}
 \end{figure}
@@ -646,11 +742,11 @@ example:
 
 \newpage
 
-\includegraphics[width=3.125in,height=\textheight]{images/figure_1.png}{]}
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_1.png}{]}
 
 \begin{figure}
 \centering
-\includegraphics[width=4.16667in,height=\textheight]{images/table_1.png}
+\includegraphics[width=4.16667in,height=\textheight,keepaspectratio]{images/table_1.png}
 \caption{\textbf{Table 1}. A description of datasets obtained at the
 sites}
 \end{figure}
@@ -659,7 +755,7 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight]{images/scheme_1.png}
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/scheme_1.png}
 \caption{Scheme 1. Data handling procedure}
 \end{figure}
 
@@ -667,13 +763,13 @@ sites}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight]{images/figure_2b.png}
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_2b.png}
 \caption{Figure 2. Data gap filling}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.125in,height=\textheight]{images/figure_2c.png}
+\includegraphics[width=3.125in,height=\textheight,keepaspectratio]{images/figure_2c.png}
 \caption{Figure 2b. Data gap filling}
 \end{figure}
 
