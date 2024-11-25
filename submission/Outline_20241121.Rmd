@@ -1,6 +1,5 @@
 ---
-title: "**Spatio-temporal distinct patterns in variations of $PM_{10}$ and $PM_{2.5}$
-  relative to the recent drivings of emission sources in Mongolia**"
+title: "**Evidence for a Change to Aerosol Fractions: In a Gobi Town**"
 bibliography: references.bib
 output:
   pdf_document:
@@ -60,7 +59,7 @@ To whom correspondence should be addressed:
 \linenumbers
 
 ## Abstract (150 words)
-
+Driven by mining industrial progress, household coal combustion has increased greatly in Mongolia since the 2000s. Demographic evidence has revealed an ongoing reduction in rural-nomadic lifestyle and a rise of the population at urban areas, which may gradually extend a household major source of fine particulate matter (PM2.5) air pollution in winter as a heating. Together with observations that lifespan in various animal species is flexible and can be increased by genetic or pharmaceutical intervention, these results have led to suggestions that longevity may not be subject to strict, species-specific genetic constraints. Here, by analysing global demographic data, we show that improvements in survival with age tend to decline after age 100, and that the age at death of the world’s oldest person has not increased since the 1990s. Our results strongly suggest that the maximum lifespan of humans is fixed and subject to natural constraints.
 Storyline:
 
 1.  A new pattern is emerged
@@ -83,7 +82,8 @@ Storyline:
     attention.
 7.  r ratio shows ... emission source; dust might carry anthropogenic
     fine particulates as well.
-
+    Spatio-temporal distinct patterns in variations of $PM_{10}$ and $PM_{2.5}$
+      relative to the recent drivings of emission sources in Mongolia
 \newpage
 
 ## Introduction
@@ -187,65 +187,45 @@ regions in South-east Asia.
 
 ## Results
 ### The spatio-temporal variations of the PMs at the study sites
-To evaluate the spatial variations in particulate matter (PM) concentrations, we displayed hourly observed values of PM10 and PM2.5 for all study sites (figure_3). The mean p-values indicate that PM concentrations differ significantly at a 99% confidence level across all sites (figure_3), with the exception of a 95% confidence level between DZ and UB for PM10 (figure_3a), highlighting substantial concentration disparities among sites. While quantitative differences in PM concentration values exist across all sites, two key patterns emerge when examining median deviations from mean values and irregular observation fluctuations. For instance, PM10 demonstrates more erratic behavior than PM2.5 at each location, particularly evident at ZU and SS sites. Furthermore, the mean values calculated from hourly measurements surpass the median concentrations for both PM10 and PM2.5 across all sites, with notable prominence at UB and DZ locations. Consequently, significant spatial differences in PM concentrations exist among all sites, regardless of urban or rural classification. However, the sites can be categorized into two groups based on their characteristics: UB (urban) and DZ (rural town, Gobi); and SS (rural, Gobi) and ZU (rural, Gobi). These findings for DZ appear to support our hypothesis of emerging new emission patterns related to increased coal consumption during winter months.
+  To evaluate the spatial variations in particulate matter (PM) concentrations, we displayed hourly observed values of PM10 and PM2.5 for all study sites (figure_3).
+The mean p-values indicate that PM concentrations differ significantly at a 99% confidence level across all sites (figure_3), with the exception of a 95% confidence level between DZ and UB for PM10 (figure_3a), highlighting substantial concentration disparities among sites. While quantitative differences in PM concentration values exist across all sites, two key patterns emerge when examining median deviations from mean values and irregular observation fluctuations. For instance, PM10 demonstrates more erratic behavior than PM2.5 at each location, particularly evident at ZU and SS sites. Furthermore, the mean values calculated from hourly measurements surpass the median concentrations for both PM10 and PM2.5 across all sites, with notable prominence at UB and DZ locations. Consequently, significant spatial differences in PM concentrations exist among all sites, regardless of urban or rural classification. However, the sites can be categorized into two groups based on their characteristics: UB (urban) and DZ (rural town, Gobi); and SS (rural, Gobi) and ZU (rural, Gobi). These findings for DZ appear to support our hypothesis of emerging new emission patterns related to increased coal consumption during winter months.
 
---> 3.1.2
-
-To investigate whether emerging PM patterns are associated with household winter heating activities, we demonstrated annual variations in PM10 and PM2.5 concentrations at the sites. Significant annual variations in PM10 and PM2.5 levels were observed at UB and DZ sites, with maximum concentrations exceeding 100 $\mu g/m^3$ during colder months (January, November, December) and lower levels consistently below 50 $\mu g/m^3$ during warmer months (May-September). These annual maximums coincided with the diurnal variations in PM10 and PM2.5 concentrations at sites DZ and UB, where PM concentrations reached their highest values during nighttime and early morning hours (approximately 8 PM to 4 AM UTC), with median values surpassing 50 $\mu g/m^3$. Conversely, both pollutants exhibited reduced concentrations during daytime hours (8AM to 4PM UTC), likely due to increased atmospheric dispersion. UB site exhibited similar daily fluctuations with extended periods (approximately 8 PM to 5 AM UTC) of elevated concentrations. Additionally, winter PM10 concentrations at both sites were primarily composed of PM2.5 (figure_5; mean values for PM10 with the color bar). The increase in PM10 and PM2.5 aligns with the heating active hours, suggesting that household coal consumption contributes to elevated PM levels at both DZ and UB sites. In contrast, ZU and SS sites displayed significantly lower annual PM10 and PM2.5 levels, with sudden frequent spikes in spring followed by occasional instances in autumn. These annual variations were more pronounced in PM10 compared to PM2.5, highlighting the impact of Gobi dust and sand storms. Similar occurrences were also noted at the DZ site, suggesting its exposure to both winter heating emissions and natural spring dust, reflecting its Gobi-region characteristics.
+  To investigate whether emerging PM patterns are associated with household winter heating activities, we demonstrated annual variations in PM10 and PM2.5 concentrations at the sites.
+Significant annual variations in PM10 and PM2.5 levels were observed at UB and DZ sites, with maximum concentrations exceeding 100 $\mu g/m^3$ during colder months (January, November, December) and lower levels consistently below 50 $\mu g/m^3$ during warmer months (May-September). These annual maximums coincided with the diurnal variations in PM10 and PM2.5 concentrations at sites DZ and UB, where PM concentrations reached their highest values during nighttime and early morning hours (approximately 8 PM to 4 AM UTC), with median values surpassing 50 $\mu g/m^3$. Conversely, both pollutants exhibited reduced concentrations during daytime hours (8AM to 4PM UTC), likely due to increased atmospheric dispersion. UB site exhibited similar daily fluctuations with extended periods (approximately 8 PM to 5 AM UTC) of elevated concentrations. Additionally, winter PM10 concentrations at both sites were primarily composed of PM2.5 (figure_5; mean values for PM10 with the color bar). The increase in PM10 and PM2.5 aligns with the heating active hours, suggesting that household coal consumption contributes to elevated PM levels at both DZ and UB sites. In contrast, ZU and SS sites displayed significantly lower annual PM10 and PM2.5 levels, with sudden frequent spikes in spring followed by occasional instances in autumn. These annual variations were more pronounced in PM10 compared to PM2.5, highlighting the impact of Gobi dust and sand storms. Similar occurrences were also noted at the DZ site, suggesting its exposure to both winter heating emissions and natural spring dust, reflecting its Gobi-region characteristics.
 The annual variability in PMs with higher concentrations during nighttime and colder months, indicating the influence of localized emission sources and reduced boundary layer mixing at UB and DZ sites. Additionally, the upward extended ranges without the bottom bottle of the violin plot, demonstrating greater variability during colder months. It implies instability in concentrations potentially reaching high levels above 400 $\mu g/m^3$ when Arctic oscillation/Siberian high intensifies with heating, and dropping below 50 $\mu g/m^3$ when it weakens or heating demand decreases. These findings confirm the (DZ) emerging PM pattern is caused by household activities and influenced by meteorological conditions. Overall, meteorological factors appear to play a crucial role in governing PM levels.
 
---> 3.2.1
-
-
-
 ### The emission patterns of interrelations among meteorological variables at the study sites
-  - PMs varies with the wind speed and visibility
-  - In general, three distinct patterns were resulted with PCA analysis, which is in consistent with temporal variation. explained with variables and changes in drivings (with PCA analysis)
+add table, add r 1.3, 2 on figure_6, add supplement figures
 
-[AND] To distinguish the emission driving variables, we demonstrated interrelations between(WS) and visibility (VIS) among particulate matters of PM10 and PM2.5 for study sites (figure_4).
-[AND] Higher PM concentrations tend to correspond to lower wind speeds (smaller circles) and reduced visibility (darker blue points) in UB.
-[AND] All Gobi sites show the largest variability in PM concentrations, with extreme outliers correlated with the WS primarily in the springs.
+  To identify the key factors influencing PM emissions, we examined the relationships between wind speed (WS), visibility (VIS), and particulate matter (PM10 and PM2.5) concentrations across the study sites (figure_6).
+In UB during winter, elevated PM levels typically coincide with low wind speeds and reduced visibility (indicated by darker blue points). Notably, at DZ and ZU locations, high PM10 concentrations were observed during both low and high wind speed conditions in winter. All Gobi sites exhibit the greatest variation in PM concentrations during spring, with extreme outliers primarily associated with increased WS and reduced visibility below 10000 km. Similar findings were also revealed through Principal Component Analysis (PCA). The initial two principal components (Dim 1 and Dim 2) account for 66.52% of the total variance. Dim 1 shows a strong association with PM10 and PM2.5, while visibility demonstrates an inverse correlation, suggesting that reduced visibility corresponds to higher pollution levels. Wind speed and direction align positively with Dim 2 (22.16%), reflecting their impact on emissions.
+When comparing PM10 aligns with PM2.5, the 1:1 ratio increases approximately 1.3 times for UB, 2 times for DZ, XXX for ZU, and XXX for SS as PM10 concentrations increase. This increase in Gobi sites further escalated up to 2-5 times in ZU, and XXX times in SS sites, indicating insufficient PM2.5 particulates in those locations, particularly at the ZU site. It is worth noting that instances where PM2.5 values exceed PM10 reflect equipment accuracy, correction errors, and higher sensitivity rates (ability to record emissions such as smoking near the sensor area). However, this discrepancy diminishes as PM concentrations increase, validating that higher observational records of PM2.5 compared to PM10 do not invalidate our results.  Furthermore, clustering of monitoring sites based on PM concentrations and geographic features (Figure 7b) reveals distinct patterns. UB (urban, capital city) is characterized by high PM concentrations (positive Dim 1 scores), while SS (rural, Gobi, town (site located in the prevailing wind above the town)) shows low PM levels, clustering tightly along the negative Dim 1 axis. DZ (rural, Gobi, town center) displays considerable variability, with clusters extending into higher Dim 1 and Dim 2 ranges, reflecting the complex interplay of emission sources and meteorological factors. ZU (rural, Gobi, village) overlaps with SS but exhibits greater spread, indicating moderate pollution levels influenced by seasonal and localized factors.
+These findings highlight the complex interplay of spatial, meteorological, and local factors influencing air particulate matter concentrations across the studied locations and emphasizing the need for considering not only regional influences but also site-specific characteristics.  
 
-[AND] In comparison between PM10 increase with the PM2.5, as concentrations increase in PM10 concentration the ratio 1:1 is inscreased approximately 1.3 times for UB, and 2 times for all three Gobi sites. This increase in Gobi sites were further increased upto 5 times in ZU, and XXX times in SS sites showing the insufficient PM2.5 particulates in the those sites.
-
-The Principal Component Analysis (PCA) biplot (Figure 7a) highlights the relationships among key variables, including PM10, PM2.5, wind speed (WS), wind direction (WD), visibility, relative humidity (r), and optical properties of aerosols (OPC). The first two principal components (Dim 1 and Dim 2) explain 66.52% of the total variance, with Dim 1 (44.36%) strongly associated with PM10 and PM2.5, indicating that these pollutants are major contributors to air quality variations. Visibility is inversely correlated with PM10 and PM2.5, suggesting that reduced visibility aligns with higher pollution levels. Wind speed and wind direction are positively aligned with Dim 2 (22.16%), reflecting their influence on pollutant dispersion.
-
-The clustering of monitoring sites based on PM concentrations and geographic characteristics (Figure 7b) reveals distinct patterns. UB (urban background) is characterized by high PM concentrations (positive Dim 1 scores), while SS (suburban site) demonstrates low PM levels, clustering tightly along the negative Dim 1 axis. DZ (industrial site) exhibits substantial variability, with clusters extending into higher Dim 1 and Dim 2 ranges, reflecting the complex interplay of emission sources and meteorological factors. ZU (rural site) overlaps with SS but shows greater spread, indicating moderate pollution levels influenced by seasonal and localized factors. These results underscore the significant spatial and meteorological influences on air quality across the studied locations.
-
-[BUT]
-
-[THEREFORE] 3 clusters, supply is different?
-
+fig caption:  the Principal Component Analysis (PCA) bi-plot (Figure 7a) highlights the relationships among key variables, including PM10, PM2.5, wind speed (WS), wind direction (WD), visibility, ratio of PM2.5 to PM10 (r), and numbers of aerosols by optical particle counter (OPC). The first two principal components (Dim 1 and Dim 2) explain 66.52% of the total variance, with Dim 1 (44.36%) strongly associated with PM10 and PM2.5. Wind speed and wind direction are positively aligned with Dim 2 (22.16%), reflecting their influence on pollutant dispersion.
 
 ###  The recent trends in concentrations of PMS and fine-coarse fractional changes at the sites
-Figure 8 illustrates the trend analysis of PM10 and PM2.5 concentrations across four monitoring sites (UB, DZ, ZU, and SS) from 2009 to 2020. The time series demonstrates seasonal patterns and trends, with notable differences in particulate matter concentrations between the four seasons: Q1 (winter), Q2 (spring), Q3 (summer), and Q4 (autumn).
+add table, add trend figure: r, add relationship figure: r in spring and pm2.5 in winter
 
-The p-values displayed on the figure indicate the statistical significance of trend changes in PM10 and PM2.5 levels for each season. At UB, significant negative trends are observed for Q1 and Q2 (p < 0.001). At DZ, a significant positive trend is observed for Q1 (R = 0.17, p < 0.001), indicating increasing particulate matter levels during this season.17, p < 0.001), while Q2 exhibits no significant trend (R = 0, p = 0.915)., highlighting a decreasing pattern in particulate concentrations during these periods over time. In contrast, Q3 and Q4 show weaker or nonsignificant trends (e.g., R = -0.03, p > 0.2), suggesting minimal changes in PM levels during the warmer months.
-
-The industrial site (DZ) exhibits higher variability in PM levels, with periodic spikes indicative of localized emissions and industrial activities. Urban background (UB) consistently records elevated PM levels during Q1, driven by heating and combustion-related sources. Rural (ZU) and suburban (SS) sites generally display lower particulate concentrations. However, at ZU, a significant negative trend is observed in both PM10 and PM2.5 for Q1, suggesting a consistent reduction in particulate matter during winter months (may reduced transboundary traffic). At SS, a negative trend is observed in PM2.5 for Q2, reflecting a seasonal decline potentially linked to  reduced wind speed during spring.
-
-The significant decreasing trends in PM concentrations in UB during colder months likely indicate improvements in emission control measures and a transition to more efficient heating practices. In contrast, a significant increasing trend is observed at DZ, particularly during Q1, suggesting rising emissions potentially associated with urbanized  household practices and other local activities in Mongolia's regional towns.
-
-  - There are significant changes in time-series of PMs at 4 seasons
-  - There any significant changes in ratio in the spring in respect to winter in DZ.
-  - Close relationships was found between PM2.5 in winter and r values in the spring.
-
+  Figure 8 illustrates the trend analysis of PM10 and PM2.5 concentrations across study sites from 2009 to 2020.
+The time series demonstrates seasonal patterns and trends, with p-values of trend changes, seasonally: winter (Q1), spring (Q2), and summer-autumn (Q3). At UB, significant negative trends both in PM10 and PM2.5 concentrations are observed for winter and spring (Q1 and Q2, p < 0.001). At DZ, a significant positive trend in PM10 and PM2.5 concentrations is observed for winter (Q1, p < 0.001), indicating increasing particulate matter levels during this season.
+At ZU, a significant negative trend is observed in both PM10 and PM2.5 for winter (Q1, p < 0.001), suggesting a consistent reduction in particulate matter during winter months (may reduced transboundary traffic associated with covid periods, resulted in declined PM10 concentrations; or data gaps). At SS, a negative trend is observed in PM2.5 for spring (Q2, p < 0.001), reflecting a seasonal decline potentially linked to  reduced wind speed during spring.
+The significant decreasing trends in PM concentrations in UB during colder months likely indicate improvements in emission control measures and a transition to more efficient heating practices. In contrast, a significant increasing trend is observed at DZ, particularly during winter (Q1), suggesting rising emissions potentially associated with urbanized  household practices and other local activities in Mongolia's regional towns.
 
 
 
 ## Conclusions
+In this study, we investigated the temporal variations of PM2.5 and PM10 concentrations at the 4 sites of rural and urban those located along the
+the wind corridor.
+Air particulate matter concentrations in urban-town sites of UB and DZ is episodically dictated by dust events in spring or late autumn, yet seasonally governed by anthropogenic emissions in winter. Air particulate matter concentrations in rural sites of SS and ZU is episodically dictated by dust events in spring or late autumn.
 
-In this study, we investigated the temporal variations of PM2.5 and PM10
-concentrations at the 4 sites of rural and urban those located along the
-the wind corridor. Three distinct variations has been detected.
-
-Air quality in urban sites is episodically dictated by dust events in spring or late autumn, yet seasonally governed by anthropogenic emissions in winter.
-Air quality in rural sites of SS and ZU is episodically dictated by dust events in spring or late autumn.
-Air quality in rural sites of SS and ZU is episodically dictated by dust events in spring or late autumn.
+Three distinct variations has been detected.
 
 
-A clear seasonal variations in the sites of UB and DZ is [Air quality is
-governed by natural dust emission, and anthropogenic emissions]
+1. It is evident of the new emission patterns in Mongolia.
+2. Related to the winter emission patterns, fine particulates fraction in the spring is increased.
+3. This alarms...
+4. National level; meteorological impact is large. ... However, reduced... On the other hand, it is ... with the towns. This points that air quality will be poor whether it is changed fuel, .. unless to change heating system. Therefore, it is not the reason to move the capital city. Only solution is to change the heating system, do not burn any type of the coal.
 
 * Due
 to rapid increase in urban, and combustion of coal/oyutolgoi for heating
